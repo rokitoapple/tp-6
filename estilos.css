@@ -10,13 +10,72 @@ header{
     justify-content: space-between;
     align-items: baseline;
 }
-#titulos{
-    width: 100%;
-    justify-content: flex-start;
+#titulo-dere{
+    list-style: none;
+    text-decoration: none;
 }
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 0 50px;
+}
+#titulos{
+    width: 100%;
+justify-content: flex-start;
+}
+#titulo{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 960px;
+}
+.inicio{
+    display: flex;
+justify-content: space-between;
+align-items: baseline;
+list-style: none;
+padding: 25px;
+text-decoration: none;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.img-container{
+    position: relative;
+}
+.producto .img-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.producto:hover .img-hover{
+    opacity: 1;
+}
+.producto .precio{
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+    background-color: #fff;
+    transition: all 0,4s ease-in-out;
+
+}
+.producto:hover .precio{
+    background-color: black;
+    color: #fff;
+    bottom: 45px;
+}
+.producto .precio p{
+    margin: 0;
+    font-size: 0.7em;
 }
