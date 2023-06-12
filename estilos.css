@@ -43,26 +43,30 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 960px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 .box{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
 }
 .img-container{
     position: relative;
 }
-.producto .img-hover{
+.box .img-hover{
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
 }
-.producto:hover .img-hover{
+.box:hover .img-hover{
     opacity: 1;
 }
-.producto .precio{
+.box .precio{
     position: relative;
     bottom: 30px;
     left: 10px;
@@ -70,12 +74,27 @@ main{
     transition: all 0,4s ease-in-out;
 
 }
-.producto:hover .precio{
+.box:hover .precio{
     background-color: black;
     color: #fff;
     bottom: 45px;
 }
-.producto .precio p{
+.box .precio p{
     margin: 0;
     font-size: 0.7em;
+}
+img{
+    border-radius: 5%;
+}
+.inicio li{
+    padding: 15px;
+}
+.precio{
+    width: 53px;
+}
+.box img{
+    width: 100%;
+}
+.box:hover .precio{
+    bottom: 45px;
 }
