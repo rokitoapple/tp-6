@@ -89,3 +89,33 @@ img{
 .inicio a{
     text-decoration: none;
 }
+.boton{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+    padding: 5px; /*margen interior*/
+    border-radius: 15px;
+    font-size: 1.2em;
+    display: inline-block;
+}
+.box .corazon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#foot{
+    text-align: center;
+}
+#redes{
+    text-align: center;
+}
+#redes li{
+    display: inline-block;
+}
+.redes{
+    display: inline-block;
+    margin: 20px;
+}
+footer img{
+    width: 60%;
+}
